@@ -1,0 +1,44 @@
+body{
+     font-family: Din-condensed-web,serif
+}
+.navbar {
+    background-color: #2b2523;
+    color : #f84405 !important;
+}
+.nav-link {
+    color : #f84405 !important;
+}
+
+.nav-link {
+    opacity : .4;
+}
+.nav-link:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.current {
+    opacity : 1 !important;
+}
+#about {
+    justify-content: center;
+    align-items: center;
+}
+div.hexagon {
+    height : 400px;
+    width:  400px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+#me {
+    height: 450px;
+    position: relative;
+    bottom: 30px;
+    right: 5px;
+}
+.slide-title {
+    letter-spacing: 10px;
+    color: #262626;
+    font-size: 23px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #ff652f, 1px -1px 0 #ff652f, -1px 1px 0 #ff652f, 1px 1px 0 #ff652f;
+}
