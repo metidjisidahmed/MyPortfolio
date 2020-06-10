@@ -167,4 +167,347 @@ strong {
 .skillTag {
     font-size: 1.5em;
 }
+/*Note: If you are using landscape images use 'background-size:auto 100%;' in .textOverImage and 'background-size:auto 110%;' in .textOverImage:hover*/
+
+a{text-decoration:none;}
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    .textOverImage{background-size:cover!important;}
+}
+.textOverImage{
+    position:relative;
+    width:300px;
+    height:300px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-position:center;
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+}
+
+.textOverImage:hover{
+    background-size:110%;
+}
+
+.textOverImage:before{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+.textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+}
+
+.textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+}
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+/* Gallery photos style */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.Gallery, .Gallery:before, .Gallery:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+/*body{*/
+/*    background: #f9f9f9;*/
+/*    font-size: 16px;*/
+/*    font-family: 'Raleway', sans-serif;*/
+/*}*/
+
+.Gallery .Gallery.main-title{
+    color: #2d2d2d;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.7em 0;
+}
+
+.Gallery-container{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+}
+@media screen and (max-width: 640px){
+    .Gallery-container{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .Gallery-container{
+        width: 33.33333%;
+    }
+}
+
+.Gallery-container .Gallery.title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Gallery-content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Gallery-content .Gallery-content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    /*height: 99%;*/
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.Gallery-content:hover .Gallery-content-overlay{
+    opacity: 1;
+}
+
+.Gallery-content-image{
+    width: 100%;
+}
+
+
+.Gallery-content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.Gallery-content:hover .Gallery-content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.Gallery-content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.Gallery-content-details p{
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+    top: 80%;
+}
+
+.fadeIn-top{
+    top: 20%;
+}
+
+.fadeIn-left{
+    left: 20%;
+}
+
+.fadeIn-right{
+    left: 80%;
+}
+
+/* Form Style */
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form__field {
+    /*font-family: inherit;*/
+    font-family: Roboto,serif;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: -webkit-linear-gradient(90deg, rgb(186, 61, 81), rgb(186, 61, 94));
+    border-image: linear-gradient(90deg, rgb(186, 61, 81), rgb(186, 61, 94));
+
+    border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #BA3D51;
+    font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+/*  Button Form style */
+
+.FormButton ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.FormButton ul li {
+    list-style: none;
+}
+.FormButton ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #BA3D51;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    transition: .5s;
+    z-index: 1;
+}
+.FormButton ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #BA3D51;
+    border-bottom: 2px solid #BA3D51;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: .3s;
+}
+.FormButton ul li a:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #BA3D51;
+    transform: scale(0);
+    opacity: 0;
+    transition: .3s;
+    z-index: -1;
+}
+.FormButton ul li a:hover {
+    color: #262626;
+}
+.FormButton ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+.FormButton ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+
+/* demo */
+/*body {*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    font-size: 1.5rem;*/
+/*    background-color: #222222;*/
+/*}*/
 
