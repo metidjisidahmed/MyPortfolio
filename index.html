@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Css/fontawesome/fontawesome/css/all.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="Css/styles.css">
     <title>Document</title>
 </head>
@@ -22,7 +23,7 @@
     </ul>
 </nav>
 <div>
-    <div  class="row  justify-content-center mt-5" id="about" style="min-height:90vh ;background-color: #262626">
+    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="top-center"  class="row  justify-content-center mt-5" id="about" style="min-height:90vh ;background-color: #262626">
             <h1 class="slide-title col-12" style="font-size: 3rem;"> ABOUT ME</h1>
             <div class="col-12 col-md-4 justify-content-center">
                 <img src="img/pic-final.png" id="me" alt="">
@@ -55,7 +56,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center mt-5" id="about" style=" ;background-color: #262626">
+    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="top-center" class="row justify-content-center mt-5" id="about" style=" ;background-color: #262626">
         <h1 class="slide-title col-12" style="font-size: 3rem;"> MY SKILLS </h1>
         <div class="col-12 col-sm-5 offset-sm-1" >
             <h3 style="text-align: center" class="mb-5 mt-5"><strong>Web Development</strong></h3>
@@ -155,7 +156,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center mt-5" id="about" style=" ;background-color: #262626">
+    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="top-center" class="row justify-content-center mt-5" id="about" style=" ;background-color: #262626">
         <h1 class="slide-title col-12" style="font-size: 3rem;"> MY EXPERIANCE </h1>
         <div class="row Gallery justify-content-around">
             <div class="Gallery-container col-md-3">
@@ -238,8 +239,8 @@
 
 
     </div>
-    <div class="row mt-5" id="about" style="border-bottom : 2px solid #262626" style="background-color: #262626; box-sizing: border-box">
-        <h1 class="slide-title col-12" style="font-size: 3rem;"> Interested ? Contact Me </h1>
+    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="top-center" class="row mt-5" id="about" style="border-bottom : 2px solid #262626" style="background-color: #262626; box-sizing: border-box">
+        <h1 class="slide-title col-12" style="font-size: 3rem;">LET WORK TOGETHER!</h1>
         <div class="col-12 col-md-6  shadow">
             <h3 style="text-align: center" class="mb-5 mt-5"><strong>Contact Form</strong></h3>
             <div class="form__group field col-12" style="margin:auto">
@@ -303,7 +304,9 @@
 <script src="node_modules/popper.js/dist/popper.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/aos/dist/aos.js"></script>
 <script>
+    AOS.init();
 </script>
 </body>
 </html>
