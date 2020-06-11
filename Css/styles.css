@@ -51,6 +51,15 @@ div.hexagon {
     margin-bottom: 20px;
     text-shadow: -1px -1px 0 #ff652f, 1px -1px 0 #ff652f, -1px 1px 0 #ff652f, 1px 1px 0 #ff652f;
 }
+.slide-title-Pink {
+    text-align:center;
+    letter-spacing: 10px;
+    color: #1C1A24;
+    font-size: 23px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #BA3D51, 1px -1px 0 #BA3D51, -1px 1px 0 #BA3D51, 1px 1px 0 #BA3D51;
+}
 
 #aboutContent{
     padding: 1rem 2rem;
@@ -383,7 +392,7 @@ a{text-decoration:none;}
     font-family: Roboto,serif;
     width: 100%;
     border: 0;
-    border-bottom: 2px solid #9b9b9b;
+    border-bottom: 5px solid #9b9b9b;
     outline: 0;
     font-size: 1.3rem;
     color: #fff;
@@ -497,6 +506,19 @@ a{text-decoration:none;}
     opacity: 1;
 }
 
+#FooterSvg {
+    /*font-family: "Raleway";*/
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 18pt;
+    color: #fff;
+    height: 75;
+    width: 100%;
+    /*left: 0;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+}
 
 
 /* demo */
@@ -511,3 +533,76 @@ a{text-decoration:none;}
 /*    background-color: #222222;*/
 /*}*/
 
+#Footer li {
+    padding-bottom: 1.5rem;
+    color:#E5EFED;
+    font-size: 1.2rem;
+
+}
+
+/*Styling my Follow Button */
+.follow, .share {
+    display: inline-block;
+    cursor: default;
+    padding: 0;
+    margin: 0 .5em;
+    position: relative;
+    text-align: center;
+}
+.follow:hover .label, .share:hover .label {
+    opacity: 0;
+    -webkit-transition: opacity .5s .125s ease-out;
+    transition: opacity .5s .125s ease-out;
+}
+.follow:hover .icon, .share:hover .icon {
+    border-radius: 1em;
+    margin: 0 0;
+}
+
+.icon, .label {
+    background-color: #BA3D51;
+    line-height: 2rem;
+}
+
+.follow .label {
+    font-size: 1.2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    /*font-size: .618em;*/
+    /*font-weight: 900;*/
+    letter-spacing: .0816em;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    pointer-events: none;
+    /*text-transform: uppercase;*/
+    -webkit-transition: opacity .5s .75s ease-out;
+    transition: opacity .5s .75s ease-out;
+}
+
+.icon {
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 2em;
+    margin: 0 -.5em;
+    -webkit-transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    width: 2em;
+}
+.icon.first {
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    margin-left: 0;
+}
+.icon.last {
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-right: 0;
+}
+.icon:hover {
+    background-color: #f84405;
+    color: #111;
+}
