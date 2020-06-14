@@ -12,18 +12,23 @@
     <title>Document</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm fixed-top">
+<nav class="navbar navbar-expand-md fixed-top">
     <div class="navbar-brand"> Metidji Sid Ahmed</div>
-    <ul class="navbar-nav">
-        <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link "><i class="fas fa-home"></i>Home Page</a></li>
-        <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link current"><i class="fas fa-info"></i> About</a></li>
-        <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link"><i class="fas fa-cog"></i> Skills</a></li>
-        <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link "><i class="fas fa-star"></i> Experience</a></li>
-        <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link"><i class="fas fa-id-badge"></i> Contact</a></li>
-    </ul>
+    <button class="navbar-toggler" data-target="#navb" data-toggle="collapse" style="border: 2px solid #f84405;border-radius: 10px">
+        <div class="navbar-toggler-icon"> <i class="fas fa-bars" style="font-size: 2rem;color: #f84405;"></i></div>
+    </button>
+    <div id="navb" class="navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link "><i class="fas fa-home"></i> <br class="d-md-none">Home <span class="d-none d-md-inline">Page</span></a></li>
+            <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link current"><i class="fas fa-info"></i> <br class="d-md-none">About</a></li>
+            <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link"><i class="fas fa-cog"></i> <br class="d-md-none">Skills</a></li>
+            <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link "><i class="fas fa-star"></i> <br class="d-md-none"> Experience</a></li>
+            <li class="nav-item mr-4 ml-4"><a href="#" class="nav-link"><i class="fas fa-id-badge"></i> <br class="d-md-none">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 <div>
-    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="top-center"  class="row  justify-content-center mt-5" id="about" style="min-height:90vh ;background-color: #262626">
+    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="top-center"  class="row  justify-content-center" id="about" style="min-height:90vh ;background-color: #262626">
             <h1 class="slide-title col-12" style="font-size: 3rem;"> ABOUT ME</h1>
             <div class="col-12 col-md-4 justify-content-center">
                 <img src="img/pic-final.png" id="me" alt="">
@@ -165,8 +170,15 @@
                         <div class="Gallery-content-overlay"></div>
                         <img class="Gallery-content-image" src="img/Vizu-SFSD.png">
                         <div class="Gallery-content-details fadeIn-bottom">
-                            <h3><strong style="color: #f84405 !important">Vizu-SFSD</strong></h3>
+                            <h3 style="color:#BA3D51" >Vizu-SFSD</h3>
                             <p>A web app simulates the operations in the databases for educational use</p>
+                            <span style="color: #f84405 !important">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3"></i>
+                                <i class="fab fa-bootstrap"></i>
+                                <i class="fab fa-js"></i>
+<!--                                <i class="fab fa-react"></i>-->
+                            </span>
                         </div>
                     </a>
                 </div>
@@ -175,10 +187,17 @@
                 <div class="Gallery-content">
                     <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
                         <div class="Gallery-content-overlay"></div>
-                        <img class="Gallery-content-image" src="img/Hotel.png">
+                        <img class="Gallery-content-image" src="img/Hotel50.png">
                         <div class="Gallery-content-details fadeIn-bottom">
-                            <h3>This is a title</h3>
-                            <p>This is a short description</p>
+                            <h3 style="color:#BA3D51">Boston Hotel</h3>
+                            <p>A Hotel WebSite with a contact form</p>
+                            <span style="color: #f84405 !important">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3"></i>
+<!--                                <i class="fab fa-bootstrap"></i>-->
+<!--                                <i class="fab fa-js"></i>-->
+<!--                                <i class="fab fa-react"></i>-->
+                            </span>
                         </div>
                     </a>
                 </div>
@@ -189,8 +208,15 @@
                         <div class="Gallery-content-overlay"></div>
                         <img class="Gallery-content-image" src="img/TaskList.png">
                         <div class="Gallery-content-details fadeIn-bottom">
-                            <h3>This is a title</h3>
-                            <p>This is a short description</p>
+                            <h3 style="color: #BA3D51 !important">Task List</h3>
+                            <p> Organise yourself by Adding & Removing Tasks to Do today !!</p>
+                            <span style="color: #f84405 !important">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3"></i>
+<!--                                <i class="fab fa-bootstrap"></i>-->
+                                <i class="fab fa-js"></i>
+<!--                                <i class="fab fa-react"></i>-->
+                            </span>
                         </div>
                     </a>
                 </div>
@@ -204,8 +230,15 @@
                         <div class="Gallery-content-overlay"></div>
                         <img class="Gallery-content-image" src="img/BurgerBuilder.png">
                         <div class="Gallery-content-details fadeIn-bottom">
-                            <h3>This is a title</h3>
-                            <p>This is a short description</p>
+                            <h3 style="color: #BA3D51 !important">Burger Builder</h3>
+                            <p>a Classy way to order a burger from a restaurant!</p>
+                            <span style="color: #f84405 !important">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3"></i>
+<!--                                <i class="fab fa-bootstrap"></i>-->
+                                <i class="fab fa-js"></i>
+                                <i class="fab fa-react"></i>
+                            </span>
                         </div>
                     </a>
                 </div>
@@ -240,7 +273,7 @@
 
     </div>
     <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="top-center" class="row mt-5" id="about" style="border-bottom : 2px solid #262626" style="background-color: #262626; box-sizing: border-box">
-        <h1 class="slide-title col-12" style="font-size: 3rem;">LET WORK TOGETHER!</h1>
+        <h1 class="slide-title col-12" style="font-size: 3rem;">LET'S WORK TOGETHER!</h1>
         <div class="col-12 col-md-6  shadow">
             <h3 style="text-align: center" class="mb-5 mt-5"><strong>Contact Form</strong></h3>
             <div class="form__group field col-12" style="margin:auto">

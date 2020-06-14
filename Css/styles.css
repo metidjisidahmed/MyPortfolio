@@ -4,7 +4,21 @@
 
 @media (max-width: 768px) {
     .slide-title , .slide-title-Pink {
-        font-size: 2.75rem !important;
+        font-size: 2rem !important;
+        line-height: 2rem !important;
+    }
+    .nav-item {
+        width: 20% !important;
+        margin: 0 !important;
+    }
+    .nav-link {
+        text-align: center !important;
+    }
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+    .Gallery-content {
+        width: 80% !important;
     }
 }
 
@@ -12,8 +26,8 @@ body {
     background-color:#262626;
     overflow-x: hidden;
 }
-* {
-    font-family: Roboto, serif;
+*:not(img) {
+    /*font-family: Roboto, serif;*/
     max-width: 100vw !important;
 }
 .navbar {
@@ -39,6 +53,7 @@ body {
     color:#E5EFED;
     justify-content: center;
     align-items: center;
+    margin-top : 5rem !important;
 }
 div.hexagon {
     height : 400px;
@@ -614,4 +629,9 @@ a{text-decoration:none;}
 .icon:hover {
     background-color: #f84405;
     color: #111;
+}
+
+.skillsStats {
+    margin: auto;
+
 }
