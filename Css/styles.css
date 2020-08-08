@@ -478,7 +478,8 @@ a{text-decoration:none;}
 .FormButton ul li {
     list-style: none;
 }
-.FormButton ul li a {
+.FormButton ul li input {
+    background-color : transparent;
     position: relative;
     display: block;
     text-transform: uppercase;
@@ -492,7 +493,7 @@ a{text-decoration:none;}
     transition: .5s;
     z-index: 1;
 }
-.FormButton ul li a:before {
+.FormButton ul li input:before {
     content: '';
     position: absolute;
     top: 0;
@@ -505,7 +506,7 @@ a{text-decoration:none;}
     opacity: 0;
     transition: .3s;
 }
-.FormButton ul li a:after {
+.FormButton ul li input:after {
     content: '';
     position: absolute;
     top: 2px;
@@ -518,14 +519,14 @@ a{text-decoration:none;}
     transition: .3s;
     z-index: -1;
 }
-.FormButton ul li a:hover {
-    color: #262626;
+.FormButton ul li input:hover {
+    color: #f84405;
 }
-.FormButton ul li a:hover:before {
+.FormButton ul li input:hover:before {
     transform: scaleY(1);
     opacity: 1;
 }
-.FormButton ul li a:hover:after {
+.FormButton ul li input:hover:after {
     transform: scaleY(1);
     opacity: 1;
 }

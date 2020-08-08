@@ -325,23 +325,27 @@
         <h1 class="slide-title col-12" style="font-size: 3rem;">LET'S WORK TOGETHER!</h1>
         <div class="col-12 col-md-6  shadow">
             <h3 style="text-align: center" class="mb-5 mt-5"><strong>Contact Form</strong></h3>
-            <div class="form__group field col-12" style="margin:auto">
-                <input type="input" class="form__field mb-2" placeholder="FullName" name="name" id='name' required />
-                <label for="name" class="form__label ">FullName</label>
-            </div>
-            <div class="form__group field col-12" style="margin:auto">
-                <input type="input" class="form__field mb-2" placeholder="Email" name="email" id='email' required />
-                <label for="name" class="form__label ">Email</label>
-            </div>
-            <div class="form__group field col-12" style="margin:auto">
-                <textarea style="min-height: 150px" class="form__field mb-2" placeholder="Your Message" name="message" id='message' required></textarea>
-                <label for="name" class="form__label ">Your Message</label>
-            </div>
-            <div class="col-12 pt-5 pb-5 FormButton">
-                <ul class="justify-content-center col-12">
-                    <li><a href="#">Submit</a></li>
-                </ul>
-            </div>
+            <form action="mailto:is_metidji@esi.dz" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+                <div class="form__group field col-12" style="margin:auto">
+                    <input type="input" class="form__field mb-2" placeholder="FullName" name="name" id='name' required />
+                    <label for="name" class="form__label ">FullName</label>
+                </div>
+                <div class="form__group field col-12" style="margin:auto">
+                    <input type="input" class="form__field mb-2" placeholder="Email" name="email" id='email' required />
+                    <label for="name" class="form__label ">Email</label>
+                </div>
+                <div class="form__group field col-12" style="margin:auto">
+                    <textarea style="min-height: 150px" class="form__field mb-2" placeholder="Your Message" name="message" id='message' required></textarea>
+                    <label for="name" class="form__label ">Your Message</label>
+                </div>
+                <div class="col-12 pt-5 pb-5 FormButton">
+                    <ul class="justify-content-center col-12">
+<!--                        <li><a href="#">Submit</a></li>-->
+                        <li><input type=submit value=Submit></li>
+                    </ul>
+                </div>
+            </form>
+
         </div>
     </div>
     <div id="Footer" class="row justify-content-center shadow" style="background-color: #1C1A24">
