@@ -636,3 +636,9 @@ a{text-decoration:none;}
     margin: auto;
 
 }
+
+@media ( max-width : 768px){
+    .row {
+        margin-left: 0px !important;
+    }
+}
