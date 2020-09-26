@@ -49,7 +49,7 @@ body {
 .current {
     opacity : 1 !important;
 }
-#about {
+#about , #skillSection , #contactSection {
     color:#E5EFED;
     justify-content: center;
     align-items: center;
